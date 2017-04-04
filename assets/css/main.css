@@ -2106,7 +2106,7 @@ input, select, textarea {
 
 /* line 186, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/base/_typography.scss */
 a:hover {
-  color: #84dbbd !important;
+  color: #a1cc8f !important;
 }
 
 /* line 196, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/base/_typography.scss */
@@ -2268,8 +2268,8 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-  box-shadow: inset 0 0 0 2px #84dbbd;
-  color: #84dbbd !important;
+  box-shadow: inset 0 0 0 2px #a1cc8f;
+  color: #a1cc8f !important;
 }
 
 /* line 93, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/components/_button.scss */
@@ -2278,9 +2278,9 @@ input[type="reset"]:active,
 input[type="button"]:active,
 button:active,
 .button:active {
-  box-shadow: inset 0 0 0 2px #84dbbd;
-  color: #84dbbd !important;
-  background-color: rgba(132, 219, 189, 0.25);
+  box-shadow: inset 0 0 0 2px #a1cc8f;
+  color: #a1cc8f !important;
+  background-color: rgba(161, 204, 143, 0.25);
 }
 
 /* line 100, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/components/_button.scss */
@@ -2290,7 +2290,7 @@ input[type="button"].special,
 button.special,
 .button.special {
   box-shadow: none;
-  background-color: #84dbbd;
+  background-color: #a1cc8f;
   color: #ffffff !important;
 }
 
@@ -2300,7 +2300,7 @@ input[type="reset"].special:hover,
 input[type="button"].special:hover,
 button.special:hover,
 .button.special:hover {
-  background-color: #70d5b2;
+  background-color: #92c47d;
   color: #ffffff !important;
 }
 
@@ -2310,7 +2310,7 @@ input[type="reset"].special:active,
 input[type="button"].special:active,
 button.special:active,
 .button.special:active {
-  background-color: #49ca9d;
+  background-color: #75b45a;
   color: #ffffff !important;
 }
 
@@ -2524,8 +2524,8 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 select:focus,
 textarea:focus {
-  border-color: #84dbbd;
-  box-shadow: 0 0 0 1px #84dbbd;
+  border-color: #a1cc8f;
+  box-shadow: 0 0 0 1px #a1cc8f;
 }
 
 /* line 181, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/components/_form.scss */
@@ -2549,16 +2549,16 @@ input[type="radio"] + label:before {
 /* line 198, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/components/_form.scss */
 input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
-  background-color: #84dbbd;
-  border-color: #84dbbd;
+  background-color: #a1cc8f;
+  border-color: #a1cc8f;
   color: #ffffff;
 }
 
 /* line 213, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/components/_form.scss */
 input[type="checkbox"]:focus + label:before,
 input[type="radio"]:focus + label:before {
-  border-color: #84dbbd;
-  box-shadow: 0 0 0 1px #84dbbd;
+  border-color: #a1cc8f;
+  box-shadow: 0 0 0 1px #a1cc8f;
 }
 
 /* line 226, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/components/_form.scss */
@@ -2632,7 +2632,7 @@ input[type="radio"]:focus + label:before {
 
 /* line 37, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/components/_icon.scss */
 .icon.major.style1:before {
-  background-color: #84dbbd;
+  background-color: #a1cc8f;
   color: #ffffff;
 }
 
@@ -2660,7 +2660,7 @@ input[type="radio"]:focus + label:before {
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  background-color: #84dbbd;
+  background-color: #a1cc8f;
   border-radius: 100%;
   color: #ffffff;
   display: inline-block;
@@ -2673,12 +2673,12 @@ input[type="radio"]:focus + label:before {
 
 /* line 80, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/components/_icon.scss */
 .icon.alt:hover:before {
-  background-color: #70d5b2;
+  background-color: #92c47d;
 }
 
 /* line 86, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/components/_icon.scss */
 .icon.alt:active:before {
-  background-color: #49ca9d;
+  background-color: #75b45a;
 }
 
 /* line 93, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/components/_icon.scss */
@@ -3861,7 +3861,7 @@ body.is-menu-visible #menu {
 #banner input[type="button"].special:hover,
 #banner button.special:hover,
 #banner .button.special:hover {
-  background-color: #70d5b2;
+  background-color: #92c47d;
   color: #ffffff !important;
 }
 
@@ -3871,7 +3871,7 @@ body.is-menu-visible #menu {
 #banner input[type="button"].special:active,
 #banner button.special:active,
 #banner .button.special:active {
-  background-color: #49ca9d;
+  background-color: #75b45a;
   color: #ffffff !important;
 }
 

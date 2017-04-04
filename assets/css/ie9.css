@@ -3,58 +3,64 @@
 	pixelarity.com | hello@pixelarity.com
 	License: pixelarity.com/license
 */
-
 /* Spotlight */
+/* line 15, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/ie9.scss */
+.spotlight:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
-	.spotlight:after {
-		content: '';
-		display: block;
-		clear: both;
-	}
+/* line 21, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/ie9.scss */
+.spotlight .content {
+  float: left;
+  width: 60%;
+}
 
-	.spotlight .content {
-		float: left;
-		width: 60%;
-	}
-
-	.spotlight .image {
-		float: left;
-		margin-right: 0 !important;
-		margin-left: 4em !important;
-	}
+/* line 26, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/ie9.scss */
+.spotlight .image {
+  float: left;
+  margin-right: 0 !important;
+  margin-left: 4em !important;
+}
 
 /* Features */
+/* line 36, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/ie9.scss */
+.features:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
-	.features:after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
-	.features > * {
-		float: left;
-	}
+/* line 42, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/ie9.scss */
+.features > * {
+  float: left;
+}
 
 /* Header */
+/* line 50, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/ie9.scss */
+#header .logo {
+  position: absolute;
+  top: 0;
+  left: 1.5em;
+}
 
-	#header .logo {
-		position: absolute;
-		top: 0;
-		left: 1.5em;
-	}
-
-	#header nav {
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
+/* line 56, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/ie9.scss */
+#header nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 /* Banner */
+/* line 65, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/ie9.scss */
+#banner {
+  min-height: 0;
+}
 
-	#banner {
-		min-height: 0;
-	}
+/* line 68, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/ie9.scss */
+#banner .more {
+  display: none;
+}
 
-		#banner .more {
-			display: none;
-		}
+/*# sourceMappingURL=../css/ie9.map */

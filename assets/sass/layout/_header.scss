@@ -42,18 +42,26 @@
 			letter-spacing: _font(kerning);
 			text-transform: uppercase;
 			border: 0;
+			&[href="./"] {
+				
+				// font-size: 0;
+			}
 		}
 
 		.logo {
 			display: block;
 			height: inherit;
 			line-height: inherit;
+			img {
+				content: url('/images/CodyWilson.svg');
+				height: 50%;
+				margin-top: 10%;
+			}
 
 			span {
 				font-weight: _font(weight);
 			}
 		}
-
 		nav {
 			ul {
 				list-style: none;
@@ -95,6 +103,11 @@
 			background-color: transparent;
 			border-bottom-color: transparent;
 			color: _palette(invert, fg-bold);
+			img  {
+				content: url('/images/CodyWilson-White.svg');
+				height: 50%;
+				bottom: 0;
+			}
 
 			nav {
 				ul {

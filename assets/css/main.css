@@ -3564,43 +3564,58 @@ table.alt tbody tr td {
 }
 
 /* line 55, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
-#header .logo img {
-  content: url("/images/CodyWilson.svg");
+#header .logo svg {
+  background: url("/images/CodyWilson.svg") no-repeat;
+  background-size: 100%;
+}
+
+/* line 62, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
+#header .logo img:after {
+  content: "";
+  background: url("/images/CodyWilson.svg");
   height: 50%;
   margin-top: 10%;
 }
 
-/* line 61, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
+/* line 69, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
+#header .logo img::after {
+  content: "";
+  background: url("/images/CodyWilson.svg");
+  height: 50%;
+  margin-top: 10%;
+}
+
+/* line 76, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
 #header .logo span {
   font-weight: 300;
 }
 
-/* line 66, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
+/* line 81, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
 #header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 71, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
+/* line 86, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
 #header nav ul li {
   display: inline-block;
   padding: 0;
 }
 
-/* line 75, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
+/* line 90, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
 #header nav ul li a {
   display: inline-block;
   padding: 0 1.5em 0 1.5em;
   position: relative;
 }
 
-/* line 80, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
+/* line 95, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
 #header nav ul li a[href="#menu"] {
   padding-right: 3em;
 }
 
-/* line 83, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
+/* line 98, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
 #header nav ul li a[href="#menu"]:before {
   content: '';
   background-image: url("images/menu.svg");
@@ -3615,26 +3630,25 @@ table.alt tbody tr td {
   width: 1em;
 }
 
-/* line 102, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
+/* line 117, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
 #header.alt {
   background-color: transparent;
   border-bottom-color: transparent;
   color: #ffffff;
 }
 
-/* line 106, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
-#header.alt img {
-  content: url("/images/CodyWilson-White.svg");
-  height: 50%;
-  bottom: 0;
+/* line 126, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
+#header.alt svg {
+  background: url("/images/CodyWilson-White.svg") no-repeat;
+  background-size: 100%;
 }
 
-/* line 117, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
+/* line 138, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
 #header.alt nav ul li a[href="#menu"]:before {
   background-image: url("images/menu-alt.svg");
 }
 
-/* line 128, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
+/* line 149, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
 #header.with-banner + #banner {
   margin-top: -3.5em;
 }
@@ -3646,26 +3660,26 @@ table.alt tbody tr td {
     line-height: 2.75em;
     padding: 0 0 0 0.75em;
   }
-  /* line 141, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
+  /* line 162, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
   #header nav ul li a {
     padding: 0 0.75em 0 0.75em;
   }
-  /* line 144, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
+  /* line 165, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
   #header nav ul li a[href="#menu"] {
     padding-right: 2.5em;
   }
-  /* line 147, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
+  /* line 168, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
   #header nav ul li a[href="#menu"]:before {
     right: 1em;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* line 159, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
+  /* line 180, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
   #header .logo span {
     display: none;
   }
-  /* line 169, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
+  /* line 190, C:/Users/belthesar/Documents/sites/codywilson.info/assets/sass/layout/_header.scss */
   #header nav ul li a[href="#menu"]:only-child {
     width: 6em;
     text-indent: 6em;

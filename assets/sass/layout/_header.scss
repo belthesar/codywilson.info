@@ -52,8 +52,23 @@
 			display: block;
 			height: inherit;
 			line-height: inherit;
-			img {
-				content: url('/images/CodyWilson.svg');
+			svg {
+				background: url('/images/CodyWilson.svg') no-repeat;
+				// height: 50%;
+				background-size: 100%;
+				// margin-top: 10%;
+			}
+
+			img:after {
+				content: "";
+				background: url('/images/CodyWilson.svg');
+				height: 50%;
+				margin-top: 10%;
+			}
+
+			img::after {
+				content: "";
+				background: url('/images/CodyWilson.svg');
 				height: 50%;
 				margin-top: 10%;
 			}
@@ -103,10 +118,16 @@
 			background-color: transparent;
 			border-bottom-color: transparent;
 			color: _palette(invert, fg-bold);
-			img  {
-				content: url('/images/CodyWilson-White.svg');
-				height: 50%;
-				bottom: 0;
+			// img  {
+			// 	content: url('/images/CodyWilson-White.svg');
+			// 	height: 50%;
+			// 	bottom: 0;
+			// }
+			svg {
+				background: url('/images/CodyWilson-White.svg') no-repeat;
+				// height: 50%;
+				background-size: 100%;
+				// margin-top: 10%;
 			}
 
 			nav {

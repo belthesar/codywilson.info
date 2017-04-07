@@ -52,8 +52,12 @@
 			display: block;
 			height: inherit;
 			line-height: inherit;
-			svg {
+			div {
+				width: 180px;
+			}
+			a {
 				background: url('/images/CodyWilson.svg') no-repeat;
+				position: absolute;
 				// height: 50%;
 				background-size: 100%;
 				// margin-top: 10%;
@@ -113,8 +117,9 @@
 			// 	height: 50%;
 			// 	bottom: 0;
 			// }
-			svg {
+			a {
 				background: url('/images/CodyWilson-White.svg') no-repeat;
+				position: absolute;
 				// height: 50%;
 				background-size: 100%;
 				// margin-top: 10%;

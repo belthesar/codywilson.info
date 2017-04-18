@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+	Formula by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Story</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo" style="height: 1.8em"><a href="./" class="logo" ><svg height=100% viewBox="0 0 7743 1340" class="logo"  /></svg></a></div>
+						<nav>
+							<ul>
+								<li><a href="#menu">Menu</a></li>
+							</ul>
+						</nav>
+					</header>
+
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="./">Home</a></li>
+							<li><a href="story">Cody's Story</a></li>
+							<li><a href="resume">Resume</a></li>
+							<li><a href="paper">Whitepaper</a></li>
+						</ul>
+						<!-- <ul class="actions vertical">
+							<li><a href="#" class="button special fit">Sign Up</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul> -->
+					</nav>
+
+				<!-- Wrapper -->
+					<div id="wrapper">
+
+						<!-- Main -->
+							<section id="main" class="main">
+								<div class="inner">
+									<header class="major">
+										<h1>Building a Better Platform for Software Defined Broadcasting</h1>
+									</header>
+									<span class="image main"><img src="images/story.png" alt="" /></span>
+									<h3>Cody Wilson - Last updated 4/18/2017</h3>
+									<p>Do you ever have one of those callings? Something that you find yourself drawn to no matter how many times you pivot away? For me, broadcasting and live video production have been a siren song of curiosity, each time calling me deeper into the industry. As I have been pulled back into this world, I&rsquo;m haunted by a desire for a platform that is flexible, reliable, and capable, but also affordable. A tall order like this has been infeasible to serve until recently. This paper provides a brief overview of some advancements in the technologies of video broadcasting and their use cases and an introduction to the strengths and weaknesses of traditional versus modern broadcasting platforms. This will lead into a high level overview of a new broadcasting platform that I have designed that leverages the best from both existing models to create a flexible, feature rich solution for video broadcasting that can be used in demanding environments.</p>
+
+									<p>The world of video broadcasting in the past 10 years has changed the way we think about sharing, consuming, and creating live media content. In 2007, Ustream debuted as one of the first successful platforms for independent broadcasters to produce live content for the masses. For the first time, all it took to be a live video content producer was a webcam, a computer, a microphone, and something marginally interesting to share with the world. Not long after, LiveU introduced a backpack that turns a TV station&rsquo;s camera man into a satellite or microwave truck that could stream a live remote segment back to the station over an array of cell phone modems. Today, anyone can broadcast a moment with the push of a button thanks to smartphones and Facebook Live, professional live content creators make a living playing video games to an online audience from their bedrooms, and companies are able to showcase their next awesome thing simultaneously from the convention floor and over the internet. The advances in accessibility have made it much easier for anyone to broadcast to their respective audiences. </p>
+
+
+									<p>As technology has evolved, so have the designs of broadcasting platforms. Traditional broadcasting platforms are built to deliver non-stop audio and video to thousands, if not millions of viewers. The modern television technology platform assembles the program signal from multiple sources using complex hardware to capture and composite live and pre-recorded content, all while doing so in a reliable and highly available manner. Whether it&rsquo;s your favorite sitcom, the championship game that you&rsquo;ve been looking forward to, your nightly news or those awesome commercials you love to watch, the television station&rsquo;s job is to deliver that content to you without fail. When a technical issue does arise, thanks to the amount of engineering time and money put into building the station&rsquo;s broadcast platform, issues can be recovered from in a matter of seconds, many times before the viewer even realizes there was a problem. </p>
+
+									<p>Conversely, newer broadcasting platforms are often built around the concept of being both TV studio and broadcast station in a single computer. The flexibility of working with all of these pieces in software blurs the lines that normally existed between these otherwise individual hardware systems. Broadcasters on sites like TwitchTV or Beam will often build high-powered computers that are capable of playing the latest video games while simultaneously combining webcam video and microphone audio into their cast. This allows modern broadcasters to provide a high production value stream without a crew by operating as technical producer and on screen talent simultaneously. More professional offerings from companies like NewTek with their TriCaster line offer more traditional studio broadcast features. While flexible enough to be operated individually, these systems are designed to be used by a larger production crew, </p>
+
+									<p>These newer solutions also allow them to perform feats that are either impractical or infeasible using traditional broadcasting technology and practices. Inexpensive (or free) software switchers focused around video game broadcasting like OBS Studio or SplitMediaLabs&rsquo; XSplit Broadcaster are precision tuned to capture video and audio from the same computer they are running on, allowing the broadcaster to save money by not needing multiple computers to broadcast. The TriCaster line supports multiple Voice over IP calls without additional hardware or complex mix-minus audio routing thanks to its Skype VX technology, allowing show producers to schedule a panel of guests from across the world with minimal technical complication. All of these solutions in a traditional broadcasting environment would require much more complex audio/video capturing and routing techniques, coupled with a significantly more complex investment, in order to replicate what these software systems can do. </p>
+
+									<p>Which begs the question: If these new, modern platforms can do so much more for so much less money, why aren&rsquo;t more television stations and newsrooms switching to systems like this? The answer is that these one-box solutions introduce a major single point of failure - a risk that many stations can&rsquo;t accept. A TV station&rsquo;s ability to remain on the air directly impacts their revenue stream, so in many cases reliability is far more valuable than new features or the flexibility a software solution provides. Even modern playout automation and recording systems that leverage OEM enterprise computing hardware like Grass Valley&rsquo;s ITX platform instead of specialized purpose-built hardware are architected to remove single points of failure. </p>
+
+									<p>This binary modality did not sit well with me. There had to be a way to have our cake and eat it too. A way to architect a system leveraging these modern broadcasting technologies that provide a significant upgrade to capability with a major cost savings, all while providing the level of high availability expected from television-grade technology. After months of research and waiting for the right supporting technology, I have architected a system that can do both. Its design leverages commodity high-end general computing and enterprise Ethernet networking hardware paired with a suite of free, open source, and proprietary software to break apart the various roles of a broadcast chain into independent services. By isolating the various roles of the broadcast chain, we can scale each role horizontally to provide both availability as well as additional capacity at any leg of the chain. </p>
+
+
+									<p>This chain is isolated into three core roles, or nodes: Ingest, Composition, and Encoding. The ingest nodes are designed to consume video and/or audio from sources like cameras, video game consoles or microphones, but could also be screen captures from computers, or video from smartphones and tablets. The composition node is designed to replicate the majority of the workflow in the control booth of your average TV studio. Audio and video sources are combined with on-screen graphics to create the program signal. This role can be powered by almost any popular software broadcast production suites available, such as OBS Studio, XSplit, vMix, or Wirecast. The program signal is then sent to the encoding roles, which take in the final video signal, transcode it into a format ready for consumption by a content delivery network like YouTube Live, Twitch, Ustream, or private video CDNs like Azure or Wowza. </p>
+
+									<p>All of the nodes that make up the various roles are connected over an enterprise-grade Ethernet network. The network is used to transmit the video and audio in their various formats to their next destination. This obsoletes expensive video and audio routing hardware that requires more space, more cabling and more configuration to provide the same function. Despite using Ethernet technologies to move video between the various functions of the broadcast chain, the transit between each node is comparable to traditional video signal connections like HD-SDI or HDMI in both quality and latency.</p>
+
+									<p>This design is currently in the proof of concept phase with testing anticipated to complete sometime late Q2 of 2017. This paper will be updated with the results of the test. The current test design includes one system representative of each role with additional video sources captured via desktop capture and smartphone. </p>
+
+
+
+									
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://twitter.com/belthesar" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://facebook.com/belthesar" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.youtube.com/belthesar" class="icon alt fa-youtube"><span class="label">YouTube</span></a></li>
+								<li><a href="https://facebook.com/belthesar.music" class="icon alt fa-facebook"><span class="label">Facebook (Belthesar)</span></a></li>
+								<li><a href="./contact" class="icon alt fa-envelope"><span class="label">Contact</span></a></li>
+
+							</ul>
+						</div>
+						<p class="copyright">&copy; Cody Wilson. All rights reserved.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

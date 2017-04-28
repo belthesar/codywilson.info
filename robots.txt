@@ -1,0 +1,5 @@
+# robots.txt for codywilson.info
+
+User-agent: *
+Disallow: /epic
+Disallow: /epic.html
